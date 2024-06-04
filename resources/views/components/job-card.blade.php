@@ -1,9 +1,9 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-
+<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center border border-transparent hover:border-blue-800 group transition-colors duration-600">
+            
 <div class="self-start text-sm">Laracasts</div>
-<div class="font-bold py-8">
-    <h3>Backend developer</h3>
-    <p>Full Time -from $120,000</p>
+<div class="py-8">
+    <h3 class="group-hover:text-blue-600 text-xl transition-colors duration-600">Backend developer</h3>
+    <p class="text-sm mt-4">Full Time -from $120,000</p>
 </div>
 <div class="flex justify-between items-center">
 
@@ -13,7 +13,7 @@
        <x-tag>Tag</x-tag>
 
     </div>
-    <img src="http://placehold.it/42/42" alt="image" class="rounded-xl"/>
+   <x-employer-logo :width="42"/>
 </div>
 
 </div>
