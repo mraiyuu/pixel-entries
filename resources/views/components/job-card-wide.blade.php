@@ -19,12 +19,9 @@
 
     <div>
         @foreach ($job->tags as $tag)
-
             <x-tag :$tag>Backend</x-tag>
         @endforeach
-
-
-    </div>
+</div>
 
 
 </x-panel>

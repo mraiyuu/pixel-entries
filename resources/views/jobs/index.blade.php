@@ -1,3 +1,4 @@
+@props(['job'])
 <x-layout>
     <div class="space-y-10">
         <section class="text-center mt-6">
@@ -10,7 +11,7 @@
         <section class="pt-6">
             <x-section-heading>Featured Jobs</x-section-heading>
             <div class="grid grid-cols-3 gap-8 mt-6">
-                @foreach($tags as $tag)
+                @foreach($jobs as $job)
                     <x-job-card :$job/>
                 @endforeach
             </div>
@@ -21,7 +22,7 @@
 
             <div class="mt-6 space-x-1">
                 @foreach($tags as $tag)
-                    <x-tag :tag />
+                    <x-tag :$tag />
                 @endforeach
 
             </div>
@@ -31,7 +32,7 @@
             <x-section-heading>Recent Jobs</x-section-heading>
             <div class="mt-6 space-y-6">
                 @foreach($jobs as $job)
-                    <x-tag :tag />
+                    <x-job-card-wide :$job />>
                 @endforeach
             </div>
         </section>
