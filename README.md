@@ -10,3 +10,24 @@
 ## About Pixel Entries 
 Job web application
 
+## __Installation__
+```npm install 
+composer update 
+composer install 
+php artisan key:generate
+php artisan migrate:fresh --seed
+//before migration connect to database 
+```
+## __Arch Linux__
+```
+you are on your own in database
+for sqlite database 
+php artisan session:table
+touch database/database.sqlite
+```
+
+## __Runing__
+```
+npm run dev 
+php artisan serve
+```
